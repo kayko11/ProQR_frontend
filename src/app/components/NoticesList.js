@@ -41,15 +41,16 @@ const NoticesList = () => {
 
   return (
     <div className="p-q">
-      <Card className="mb-6">
-        <TextInput
-          icon={MagnifyingGlassIcon}
-          placeholder="Search notices..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="max-w-md text-black bg-white"
-        />
-      </Card>
+<Card className="mb-6">
+  <TextInput
+    icon={MagnifyingGlassIcon}
+    placeholder="Search notices..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className="max-w-md text-black bg-white h-8 w-8" // Adjust the h-8 w-8 based on your desired size
+  />
+</Card>
+
       
       <Grid numItems={1} numItemsSm={1} numItemsLg={2} className="gap-6">
         <Card>
